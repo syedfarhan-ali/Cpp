@@ -11,10 +11,7 @@ void sortVector(vector <int> &vector)
     {
         if (vector[leftPtr] % 2 != 0 && vector[rightPtr] % 2 == 0)
         {
-            int temp = 0;
-            temp = vector[leftPtr];
-            vector[leftPtr] = vector[rightPtr];
-            vector[rightPtr] = temp;         
+            swap(vector[leftPtr],vector[rightPtr]);        
             leftPtr++;
             rightPtr--;
         }
