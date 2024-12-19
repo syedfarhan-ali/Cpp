@@ -4,7 +4,9 @@ using namespace std;
 int main()
 {
     int arr[5] = {4,5,1,2,3};
-    for (int i = 1; i < 5; i++)
+    int size = sizeof(arr[0]/sizeof(int));
+    cout << size << endl;
+    for (int i = 1; i <= size; i++)
     {
         int j = i - 1;
         int temp = arr[i];
